@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background:#F5F5F5;
+  --tickio-yellow: #FFD66F;
+  --text-dark:#414141;
+  --text-light:#9D9D9D;
+  --text-medium: #535353;
+  --stroke-yellow: #FDEBD0;
+  --input-yellow:#FDEBD0;
+  --hover-yellow:rgba(255, 242, 211, 0.8);
+  --radius: 12px;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--background);
+}
