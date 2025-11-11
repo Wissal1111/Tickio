@@ -1,0 +1,17 @@
+.big-button {
+    color: black;
+    background-color: var(--tickio-yellow);
+    border: none;
+    border-radius: var(--small-radius);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition:  0.3s ease-in-out;
+
+}
+.big-button:hover {
+    background-color: var(--tickio-yellow-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
