@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Login from './pages/Login.jsx';
 import Signup from './pages/Signup.jsx';
 import './styles/global.css';
+import Dashboard from "./pages/Dashboard.jsx";
 function App() {
  
 
@@ -12,7 +13,7 @@ function App() {
       <Route path="/" element={<Login />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
-      <Route path="/dashboard" element={<div>Dashboard Page</div>} />
+      <Route path="/dashboard" element={<Dashboard />} />
     </Routes>
     </>
   )
