@@ -26,7 +26,7 @@
 .form-container a{
     text-decoration: none;
     color: var(--tickio-yellow);}
-.form-container label{
+.form-container .label{
     color: var(--text-dark);
     font-size: 14px;
     transform: translateX(6px);
@@ -49,3 +49,32 @@
     flex-direction: column;
     gap: 6px;
 }
+.error-label {
+  color: red;
+  display: inline-block;
+   font-size: 14px;
+    transform: translateX(6px);
+}
+
+.required-star {
+  color: red;
+  display: inline;
+   font-size: 14px;
+
+}
+
+.error-text {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 2px;
+  display: block;
+    transform: translateX(6px);
+
+}
+
+.backend-error {
+  color: red;
+  text-align: center;
+  font-size: 14px;
+}
+
