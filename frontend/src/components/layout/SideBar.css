@@ -32,7 +32,7 @@
 list-style: none;
 display: flex;
 align-items: center;
-font-size: 16px;
+font-size: 14px;
 gap: 6px;
 padding: 8px 10px;
 margin-bottom: 5px;
@@ -75,7 +75,7 @@ font-weight: 600;
     list-style: none;
 display: flex;
 align-items: center;
-font-size: 15px;
+font-size: 14px;
 gap: 8px;
 padding: 8px 10px;
 margin-bottom: 5px;
@@ -99,4 +99,20 @@ color: var(--text-dark);
     top: 50%;
     right: 12px;
     transform: translateY(-50%);
+}
+.search.animated {
+  opacity: 0;
+  transform: translateY(-8px);
+  animation: fadeSlide 0.5s ease forwards;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to {
+    opacity: 1;
+    height: auto;
+  }
 }

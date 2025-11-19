@@ -8,6 +8,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './SideBar.css';
 
+
 export default function SideBar() {
     const navigate=useNavigate();
     const [showSearch, setShowSearch] = useState(false);
@@ -32,7 +33,7 @@ export default function SideBar() {
            </div>
            </div>
            <ul className="workspaces-list">
-           {showSearch && (<div className='search'> <input type="text" name='search' placeholder='Search workspace..' />
+           {showSearch && (<div className='search animated'> <input type="text" name='search' placeholder='Search workspace..' />
             <SearchIcon/></div>)}
 
                <li><WorkspaceAcademicIcon />Workspace 1</li>

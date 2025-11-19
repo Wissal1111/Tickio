@@ -77,4 +77,9 @@
   text-align: center;
   font-size: 14px;
 }
-
+.form-container .yellowtext{
+    color: var(--tickio-yellow);
+    cursor: pointer;
+    display: inline;
+    font-weight: 600;
+}

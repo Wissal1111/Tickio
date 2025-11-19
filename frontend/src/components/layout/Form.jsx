@@ -43,7 +43,7 @@ export default function Form({ type }) {
     if (!SignUpformData.name) newErrors.name = true;
     if (!SignUpformData.email) newErrors.email = true;
     if (!SignUpformData.password) newErrors.password = true;
-    else if (SignUpformData.password.length < 6) newErrors.password = 'Password must be at least 6 characters';
+    else if (SignUpformData.password.length < 6) newErrors.password = 'Please enter at least 6 characters';
     if (!SignUpformData.confirmPassword) newErrors.confirmPassword = true;
     else if (SignUpformData.confirmPassword !== SignUpformData.password) newErrors.confirmPassword = 'Passwords do not match';
     setErrors(newErrors);
@@ -135,7 +135,7 @@ export default function Form({ type }) {
           </div>
           <div>
              {backendError && <div className="backend-error">{backendError}</div>} 
-          <span>Don't have an account? <a href="/signup">Sign up free</a></span>
+          <span>Don't have an account? <p className='yellowtext' onClick={()=>navigate('/signup')}>Sign up free</p></span>
           </div>
           <BigButton onClick={handleLogin}>Login</BigButton>
         </>
@@ -200,7 +200,7 @@ export default function Form({ type }) {
             )}
           </div>
           <div> {backendError && <div className="backend-error">{backendError}</div>}
-          <span>Already have an account? <a href="/login">Login</a></span></div>
+          <span>Already have an account? <p className='yellowtext' onClick={()=>navigate('/login')}>Log in</p></span></div>
           <BigButton onClick={handleSignUp}>Sign Up</BigButton>
         </>
       )}
