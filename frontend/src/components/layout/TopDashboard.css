@@ -1,16 +1,19 @@
 .top-dashboard {
     background-color: white;
     border-radius:4px;
-    padding: 10px 20px;
+    padding: 10px 30px;
     box-shadow: 0 1px 10px 0 rgba(255, 183, 3, 0.2);
     display: flex;
-    gap:20px;
+    justify-content: space-between;
     align-items: center;
+}
+.top-dashboard .right-top-dash{
+    display: flex;
+    gap:20px;
 }
 .stickynote{
     width: 50px;
     height: 50px;
-    
 }
 .top-dashboard .welcome-message h1 {
     font-size: 20px;
@@ -20,4 +23,17 @@
 .top-dashboard .welcome-message p {
     font-size: 14px;
     color: var(--text-light);
+}
+.top-dashboard button{
+    background-color: var(--hover-yellow);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: none;   
+    color: var(--tickio-yellow);
+    padding: 6px 10px;
+    border-radius: var(--small-radius);
+    font-weight:600;
+    font-size: 13px;
+    cursor: pointer;
 }
